@@ -1,0 +1,14 @@
+GET http://localhost:3000/posts HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+###
+POST http://localhost:3000/posts HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+  "title": "Category 4",
+  "description": "Category 4 description",
+  "likes": 0
+}
+###
