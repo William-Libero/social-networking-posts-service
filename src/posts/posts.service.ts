@@ -46,4 +46,16 @@ export class PostsService {
 
     if (error) throw new Error(error.message);
   }
+
+  // async likePost(id: number) {
+  //   const supabase = this.db.connectDatabaseUsingServiceKey();
+  //   const { data, error } = await supabase
+  //     .from('posts')
+  //     .update(updatePostDto)
+  //     .eq('id', id)
+  //     .select();
+
+  //   if (error) throw new Error(error.message);
+  //   return data;
+  // }
 }

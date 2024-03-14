@@ -8,10 +8,28 @@ import {
   Delete,
 } from '@nestjs/common';
 import { PostsService } from './posts.service';
+import { EventPattern, MessagePattern } from '@nestjs/microservices';
 
 @Controller('posts')
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
+
+  @EventPattern('like_post')
+  async likePost(id: number) {
+    var post = await this.postsService.findOne(+id);
+    if (post.length == 0) {
+      throw 'Post não encontrado';
+    }
+
+    post[0].likes = post[0].likes + 1;
+    return this.postsService.update(+id, post);
+  }
+
+  @EventPattern('create_post')
+  async createPost(createPostDto: any) {
+    console.log(createPostDto);
+    return this.postsService.create(createPostDto);
+  }
 
   @Post()
   create(@Body() createPostDto: any) {
