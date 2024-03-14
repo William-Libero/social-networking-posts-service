@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/listener.js",
+      "src": "dist/main.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/listener.js"
+      "dest": "dist/main.js"
     }
   ]
 }
