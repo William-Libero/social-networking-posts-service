@@ -1,4 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "nest build --config listener.json"
+  "buildCommand": "nest build"
 }
