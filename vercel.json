@@ -1,16 +1,4 @@
 {
   "version": 2,
-  "buildCommand": "nest build --config listener.json",
-  "builds": [
-    {
-      "src": "dist/listener.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "dist/listener.js"
-    }
-  ]
+  "buildCommand": "nest build --config listener.json"
 }
