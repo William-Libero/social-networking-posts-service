@@ -1,4 +1,3 @@
 {
-  "version": 2,
-  "buildCommand": "nest build"
+  "version": 2
 }
