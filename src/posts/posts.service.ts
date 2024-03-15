@@ -9,7 +9,11 @@ export class PostsService {
     const supabase = this.db.connectDatabaseUsingServiceKey();
     const { error } = await supabase.from('posts').insert(createPostDto);
 
-    if (error) throw new Error(error.message);
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    return true;
   }
 
   async findAll(): Promise<any[]> {
