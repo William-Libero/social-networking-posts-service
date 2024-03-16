@@ -3,7 +3,7 @@
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="100" alt="Nest Logo" /></a>
   <a href="https://www.rabbitmq.com/" target="blank"><img src="https://www.rabbitmq.com/img/rabbitmq-logo-with-name.svg" width="200" alt="Go Logo" /></a>
-  <a href="https://hub.docker.com/"><img src="https://logopng.com.br/logos/docker-27.png" width="100" alt="Go Logo" /></a>
+  <a href="https://hub.docker.com/"><img src="https://logopng.com.br/logos/docker-27.png" width="150" alt="Go Logo" /></a>
 </p>
 
 [![NestJS](https://img.shields.io/badge/NestJS-v10.0.0-red.svg)](https://nestjs.com/)
