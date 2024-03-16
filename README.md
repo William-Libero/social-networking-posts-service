@@ -9,6 +9,7 @@
 [![RabbitMQ](https://img.shields.io/badge/RabbitMQ-v4.1.0-orange.svg)](https://www.rabbitmq.com/)
 
 This project is a REST API developed in NestJS that allows the creation and liking of posts. The creation and liking actions are performed by consuming messages from a RabbitMQ queue, which are published by another API developed in Go (<a href="https://github.com/William-Libero/social-networking-posts-and-rabbitmq" target="blank">Project Link</a>).
+The posts are ultimately stored in a Supabase database.
 
 ## Features
 
