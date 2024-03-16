@@ -13,8 +13,9 @@ async function bootstrap() {
       queueOptions: {
         durable: false,
       },
+      host: '0.0.0.0',
+      port: 10000,
     },
-    port: 3000,
   });
   app.listen();
 }
