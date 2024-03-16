@@ -14,6 +14,7 @@ async function bootstrap() {
         durable: false,
       },
     },
+    port: 3000,
   });
   app.listen();
 }
