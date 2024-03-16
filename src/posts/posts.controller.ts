@@ -22,6 +22,7 @@ export class PostsController {
     }
 
     post[0].likes = post[0].likes + 1;
+    console.log(post);
     return this.postsService.update(+id, post);
   }
 
@@ -34,7 +35,6 @@ export class PostsController {
   @Post()
   create(@Body() createPostDto: any) {
     console.log(createPostDto);
-
     return this.postsService.create(createPostDto);
   }
 
