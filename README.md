@@ -11,7 +11,7 @@
 
 This project is a REST API developed in NestJS that allows the creation and liking of posts. The creation and liking actions are performed by consuming messages from a RabbitMQ queue, which are published by another API developed in Go (<a href="https://github.com/William-Libero/social-networking-posts-and-rabbitmq" target="blank">Project Link</a>).<br />
 The posts are ultimately stored in a Supabase database.<br />
-Deploy was made using Docker in <a href="https://render.com/" target="blank">Render.com</a>
+Deployed in <a href="https://render.com/" target="blank">Render.com</a> using Docker.
 
 ## Features
 
